@@ -13,6 +13,7 @@ public class Client {
             System.out.println(Thread.currentThread().getName()+":"+UserContextHolder.currentUser());
             UserContextHolder.set(user);
             System.out.println(Thread.currentThread().getName()+":"+UserContextHolder.currentUser());
+            UserContextHolder.remove();
 
         },"thread1").start();
 
@@ -20,8 +21,11 @@ public class Client {
             User user = new User("1002","chen");
             UserContextHolder.set(user);
             System.out.println(Thread.currentThread().getName()+":"+UserContextHolder.currentUser());
+            UserContextHolder.remove();
+
         },"thread2").start();
         System.out.println("---end-----");
+
     }
 
 

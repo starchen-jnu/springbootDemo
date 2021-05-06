@@ -8,6 +8,7 @@ package com.star.dynamicproxy;
 public class Client {
     public static void main(String[] args) {
         HelloWorldI helloWorldI = (HelloWorldI) InterceptorJdkProxy.getInstance(new HelloWorldImpl(),"com.star.dynamicproxy.MyInterceptor");
+//        HelloWorldI helloWorldI = (HelloWorldI) InterceptorJdkProxy.getInstance(new HelloWorldImpl(),null);
         helloWorldI.sayHello();
     }
 }

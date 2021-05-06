@@ -12,7 +12,7 @@ import java.util.Observer;
  */
 public class ProductList extends Observable {
 
-    private List<Product> productList = null;
+    private List<Product> productList ;
     private static ProductList instance;
     private ProductList(){}
 
