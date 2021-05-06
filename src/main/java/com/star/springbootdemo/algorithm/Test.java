@@ -1,5 +1,5 @@
 package com.star.springbootdemo.algorithm;
-
+//测试git
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
